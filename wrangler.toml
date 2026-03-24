@@ -1,5 +1,8 @@
 name = "tacosprint"
 compatibility_date = "2026-03-24"
 
+[build]
+command = "pip install -r requirements.txt && mkdocs build"
+
 [assets]
 directory = "./site"
