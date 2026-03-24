@@ -1,0 +1,52 @@
+site_name: Taco Sprint
+site_description: "A week of Nix hacking near the beach"
+site_url: "https://tacosprint.org"
+repo_name: "tacosprint/tacosprint.org"
+repo_url: "https://github.com/tacosprint/tacosprint.org"
+edit_uri: "edit/main/docs"
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    scheme: default
+    primary: deep-orange
+    accent: amber
+  features:
+    - navigation.expand
+    - navigation.instant
+    - navigation.tracking
+    - content.action.edit
+    - content.code.annotate
+    - toc.integrate
+  custom_dir: docs/overrides
+extra_css:
+  - https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+nav:
+  - Home: index.md
+copyright: Copyright &copy; 2026 Domen Kozar and Farid Zakaria
+plugins:
+  social:
+    cards_layout_options:
+      background_color: "#FBFBFB"
+      color: "#C75B39"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tacosprint/tacosprint.org
+  generator: false
+markdown_extensions:
+  - tables
+  - admonition
+  - def_list
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist
