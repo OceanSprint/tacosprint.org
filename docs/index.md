@@ -3,7 +3,7 @@
   <div class="grid md:grid-cols-2 gap-8">
     <div>
       <p class="text-lg mb-4">A week of Nix hacking, collaboration, and knowledge sharing on the Pacific coast of Mexico.</p>
-      <p class="text-sm text-white text-opacity-70 mb-4"><strong>Application deadline:</strong> TBD</p>
+      <p class="text-sm text-white text-opacity-70 mb-4"><strong>Application deadline:</strong> May 1, 2026</p>
 
       <div class="flex space-x-4">
         <a href="#" class="bg-white text-primary font-medium py-2 px-5 rounded-md hover:bg-gray-100 transition duration-200">
@@ -16,13 +16,13 @@
       <div class="space-y-6">
         <div>
           <h3 class="font-medium text-white text-opacity-70 uppercase text-sm tracking-wider mb-1">When</h3>
-          <p class="text-lg">Dates TBD</p>
-          <p class="text-sm text-white text-opacity-70">Sunday to Friday</p>
+          <p class="text-lg">June 20 &ndash; 26, 2026</p>
+          <p class="text-sm text-white text-opacity-70">Saturday to Friday</p>
         </div>
 
         <div>
           <h3 class="font-medium text-white text-opacity-70 uppercase text-sm tracking-wider mb-1">Where</h3>
-          <p class="text-lg">La Saladita, Guerrero, Mexico</p>
+          <p class="text-lg"><a href="https://www.google.com/maps/place/La+Saladita,+Gro.,+Mexico" class="text-white underline">La Saladita, Guerrero, Mexico</a></p>
           <p class="text-sm text-white text-opacity-70">Beachfront villa on the Pacific coast</p>
         </div>
 
@@ -87,7 +87,7 @@
 <div class="bg-white border border-gray-200 rounded-md p-6 mb-8">
   <div class="mb-5">
     <p class="text-gray-800 mb-6">Apply now to secure your spot for this collaborative coding event.</p>
-    <p class="text-gray-600 text-sm mb-4"><strong>Application deadline:</strong> TBD</p>
+    <p class="text-gray-600 text-sm mb-4"><strong>Application deadline:</strong> May 1, 2026</p>
 
     <div class="mb-3">
       <a href="#" class="bg-primary text-white font-medium py-2 px-5 rounded-md hover:bg-primary-dark transition duration-200 inline-block">
