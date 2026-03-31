@@ -1,11 +1,11 @@
 # Nix TacoSprint 2026
 <div class="bg-primary text-white rounded-lg p-8 mb-8">
   <div class="grid md:grid-cols-2 gap-8">
-    <div>
+    <div class="flex flex-col justify-between">
       <p class="text-lg mb-4">A week of Nix hacking, collaboration, and knowledge sharing on the Pacific coast of Mexico.</p>
-      <p class="text-sm text-white text-opacity-70 mb-4"><strong>Application deadline:</strong> May 1, 2026</p>
 
-      <div class="flex space-x-4">
+      <div>
+        <p class="text-sm text-white text-opacity-70 mb-4"><strong>Application deadline:</strong> May 1, 2026</p>
         <a href="#" class="bg-white text-primary font-medium py-2 px-5 rounded-md hover:bg-gray-100 transition duration-200">
           Apply Now
         </a>
@@ -62,7 +62,7 @@
 <div class="bg-white border border-gray-200 rounded-md p-6 mb-8">
   <div class="mb-5">
     <p class="text-gray-800 mb-4">Accommodation is two villas next to front beach (TBD).</p>
-    <p class="text-gray-500 text-sm mb-4"><i>Note: Accommodation is not covered by the sprint budget.</i></p>
+    <p class="text-gray-500 text-sm mb-4"><i>Note: Accommodation is covered by the sprint budget.</i></p>
   </div>
 </div>
 
@@ -106,18 +106,9 @@
 ## Travel
 
 <div class="bg-white border border-gray-200 rounded-md p-6 mb-8">
-  <div class="grid md:grid-cols-2 gap-6">
-    <div>
-      <h3 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-1">By Air</h3>
-      <p class="text-gray-800 mb-2">Fly into Ixtapa/Zihuatanejo International Airport (ZIH). There are direct flights from Mexico City and connections from major US cities.</p>
-      <p class="text-gray-600 text-sm">From ZIH it is approximately a 1 hour drive north to La Saladita.</p>
-    </div>
-
-    <div>
-      <h3 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-1">Local Transport</h3>
-      <p class="text-gray-800 mb-2">From ZIH airport you can take a taxi or arrange a private transfer to La Saladita.</p>
-      <p class="text-gray-600 text-sm">Renting a car at the airport is also an option and gives you flexibility to explore the coast.</p>
-    </div>
+  <div>
+    <p class="text-gray-800 mb-4">Most international flights connect through Mexico City (MEX). From there, take a domestic flight to Ixtapa/Zihuatanejo International Airport (ZIH), which is about a 1 hour flight. Several airlines operate this route daily.</p>
+    <p class="text-gray-800 mb-4">From ZIH it is approximately a 1 hour drive north to La Saladita. You can take a taxi, arrange a private transfer, or rent a car at the airport for flexibility to explore the coast.</p>
   </div>
 </div>
 
