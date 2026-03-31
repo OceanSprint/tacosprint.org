@@ -28,7 +28,7 @@
 
         <div>
           <h3 class="font-medium text-white text-opacity-70 uppercase text-sm tracking-wider mb-1">Who</h3>
-          <p class="text-lg">~20 Nix developers</p>
+          <p class="text-lg">~16 Nix developers</p>
           <p class="text-sm text-white text-opacity-70">All skill levels welcome</p>
         </div>
       </div>
@@ -220,7 +220,11 @@
     <p class="text-gray-400 text-sm mb-8">Your company here</p>
 
     <h4 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-3">Gold Sponsors</h4>
-    <p class="text-gray-400 text-sm mb-8">Your company here</p>
+    <div class="flex items-center space-x-6 mb-8">
+      <a href="https://opensource.fb.com/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" class="h-8">
+      </a>
+    </div>
 
     <h4 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-3">Company Sponsors</h4>
     <p class="text-gray-400 text-sm mb-8">Your company here</p>
