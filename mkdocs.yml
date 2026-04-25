@@ -1,13 +1,10 @@
 site_name: Taco Sprint
 site_description: "A week of Nix hacking near the beach"
 site_url: "https://tacosprint.org"
-repo_name: "tacosprint/tacosprint.org"
-repo_url: "https://github.com/tacosprint/tacosprint.org"
-edit_uri: "edit/main/docs"
 theme:
   name: material
-  icon:
-    repo: fontawesome/brands/github
+  logo: assets/logo.png
+  favicon: assets/logo.png
   palette:
     scheme: default
     primary: deep-orange
@@ -16,7 +13,6 @@ theme:
     - navigation.expand
     - navigation.instant
     - navigation.tracking
-    - content.action.edit
     - content.code.annotate
     - toc.integrate
   custom_dir: docs/overrides
@@ -33,9 +29,6 @@ plugins:
       color: "#C75B39"
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/tacosprint/tacosprint.org
   generator: false
 markdown_extensions:
   - tables

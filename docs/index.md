@@ -5,29 +5,29 @@
       <p class="text-lg mb-4">A week of Nix hacking, collaboration, and knowledge sharing on the Pacific coast of Mexico.</p>
 
       <div>
-        <p class="text-sm text-white text-opacity-70 mb-4"><strong>Application deadline:</strong> May 1, 2026</p>
-        <a href="#" class="bg-white text-primary font-medium py-2 px-5 rounded-md hover:bg-gray-100 transition duration-200">
+        <a href="https://app.formbricks.com/s/x2is8u81ker4rlbhw2i8lv2w" class="bg-white text-primary font-bold text-xl py-4 px-8 rounded-md hover:bg-gray-100 transition duration-200 inline-block mb-4">
           Apply Now
         </a>
+        <p class="text-sm text-white text-opacity-70"><strong>Application deadline:</strong> May 15, 2026</p>
       </div>
     </div>
 
     <div class="border-l border-white border-opacity-20 pl-8">
       <div class="space-y-6">
         <div>
-          <h3 class="font-medium text-white text-opacity-70 uppercase text-sm tracking-wider mb-1">When</h3>
+          <h3 class="font-medium text-white text-opacity-70 uppercase text-sm tracking-wider mb-1 mt-0">When</h3>
           <p class="text-lg">June 20 &ndash; 26, 2026</p>
           <p class="text-sm text-white text-opacity-70">Saturday to Friday</p>
         </div>
 
         <div>
-          <h3 class="font-medium text-white text-opacity-70 uppercase text-sm tracking-wider mb-1">Where</h3>
+          <h3 class="font-medium text-white text-opacity-70 uppercase text-sm tracking-wider mb-1 mt-0">Where</h3>
           <p class="text-lg"><a href="https://www.google.com/maps/place/La+Saladita,+Gro.,+Mexico" class="text-white underline">La Saladita, Guerrero, Mexico</a></p>
-          <p class="text-sm text-white text-opacity-70">Beachfront villa on the Pacific coast</p>
+          <p class="text-sm text-white text-opacity-70">Two beachfront villas on the Pacific coast</p>
         </div>
 
         <div>
-          <h3 class="font-medium text-white text-opacity-70 uppercase text-sm tracking-wider mb-1">Who</h3>
+          <h3 class="font-medium text-white text-opacity-70 uppercase text-sm tracking-wider mb-1 mt-0">Who</h3>
           <p class="text-lg">~16 Nix developers</p>
           <p class="text-sm text-white text-opacity-70">All skill levels welcome</p>
         </div>
@@ -42,7 +42,7 @@
   <div class="mb-4">
     <h3 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-1">Sprint Venue</h3>
     <p class="text-lg mb-1">La Saladita, Guerrero, Mexico</p>
-    <p class="text-gray-700">The sprint will take place in a beachfront villa on the Pacific coast of Mexico, surrounded by jungle and steps from the sand.</p>
+    <p class="text-gray-700">The sprint will take place in two beachfront villas on the Pacific coast of Mexico, surrounded by jungle and steps from the sand.</p>
   </div>
 
   <div class="border-t border-gray-100 pt-4">
@@ -87,10 +87,10 @@
 <div class="bg-white border border-gray-200 rounded-md p-6 mb-8">
   <div class="mb-5">
     <p class="text-gray-800 mb-6">Apply now to secure your spot for this collaborative coding event.</p>
-    <p class="text-gray-600 text-sm mb-4"><strong>Application deadline:</strong> May 1, 2026</p>
+    <p class="text-gray-600 text-sm mb-4"><strong>Application deadline:</strong> May 15, 2026</p>
 
     <div class="mb-3">
-      <a href="#" class="bg-primary text-white font-medium py-2 px-5 rounded-md hover:bg-primary-dark transition duration-200 inline-block">
+      <a href="https://app.formbricks.com/s/x2is8u81ker4rlbhw2i8lv2w" class="bg-primary text-white font-medium py-2 px-5 rounded-md hover:bg-primary-dark transition duration-200 inline-block">
         Fill Out Application Form
       </a>
     </div>
