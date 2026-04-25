@@ -36,6 +36,8 @@
   </div>
 </div>
 
+<img src="assets/villas.jpeg" alt="Beachfront villas at La Saladita" class="w-full rounded-lg mb-8">
+
 ## Location
 
 <div class="bg-white border border-gray-200 rounded-md p-6 mb-8">
