@@ -220,7 +220,14 @@
     </div>
 
     <h4 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-3">Company Sponsors</h4>
-    <p class="text-gray-400 text-sm mb-8">Your company here</p>
+    <div class="flex items-center space-x-6 mb-8">
+      <a href="https://cachix.org/" target="_blank">
+        <img src="/assets/logos/cachix.png" alt="Cachix" class="h-8">
+      </a>
+      <a href="https://numtide.com/" target="_blank">
+        <img src="/assets/logos/numtide.svg" alt="Numtide" class="h-8">
+      </a>
+    </div>
 
     <h4 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-3">Individual Sponsors</h4>
     <p class="text-gray-400 text-sm">Your name here</p>
