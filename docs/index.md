@@ -170,10 +170,10 @@
       <span class="font-medium text-gray-800">Alex Decious</span>
       <span class="text-sm text-primary">@adeci</span>
     </a>
-    <a href="https://github.com/jmbaur" class="flex flex-col items-center text-center">
-      <img src="https://github.com/jmbaur.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
-      <span class="font-medium text-gray-800">Jared Baur</span>
-      <span class="text-sm text-primary">@jmbaur</span>
+    <a href="https://github.com/alurm" class="flex flex-col items-center text-center">
+      <img src="https://github.com/alurm.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
+      <span class="font-medium text-gray-800">Alan Urmancheev</span>
+      <span class="text-sm text-primary">@alurm</span>
     </a>
     <a href="https://github.com/jonringer" class="flex flex-col items-center text-center">
       <img src="https://github.com/jonringer.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
