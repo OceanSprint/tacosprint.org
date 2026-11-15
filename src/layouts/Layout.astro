@@ -1,0 +1,93 @@
+---
+import "@fontsource-variable/dm-sans";
+import "@fontsource-variable/space-grotesk";
+import "../styles/global.css";
+import Icon from "../components/Icon.astro";
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = "Nix TacoSprint 2027 · La Saladita, Mexico",
+  description = "A week of Nix hacking, collaboration, and knowledge sharing in La Saladita, Mexico. June 2027. All skill levels welcome.",
+} = Astro.props;
+const archive = Astro.url.pathname.startsWith("/2026");
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#006847" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta
+      property="og:image"
+      content={new URL("/assets/villas.jpeg", Astro.site)}
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header container">
+      <a class="wordmark" href="/" aria-label="TacoSprint home">
+        <img
+          class="brand-symbol"
+          src="/assets/tacosprint.svg"
+          alt=""
+          width="48"
+          height="40"
+        />{" "}
+        taco<span>sprint</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="/#about">The sprint</a>
+        <a href="/#location">Location</a>
+        <a href="/2026/" aria-current={archive ? "page" : undefined}>
+          2026 edition <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+      <a class="button button-small" href="/#sponsors">
+        Become a sponsor <Icon name="arrow" />
+      </a>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer container">
+      <div>
+        <a class="wordmark" href="/" aria-label="TacoSprint home">
+          <img
+            class="brand-symbol"
+            src="/assets/tacosprint.svg"
+            alt=""
+            width="48"
+            height="40"
+          />{" "}
+          taco<span>sprint</span>
+        </a>
+        <p>A week of Nix hacking in Mexico.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/2026/">2026 edition ↗</a>
+        <a href="mailto:sponsors@tacosprint.org">Get in touch ↗</a>
+        <a href="https://github.com/OceanSprint/tacosprint.org">
+          Source on GitHub ↗
+        </a>
+      </div>
+      <p class="copyright">
+        © {new Date().getFullYear()} Domen Kozar & Farid Zakaria
+      </p>
+    </footer>
+  </body>
+</html>

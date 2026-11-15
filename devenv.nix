@@ -1,15 +1,14 @@
 { pkgs, lib, ... }:
 
 {
-  packages = [ 
-    pkgs.cairo
-  ];
-
-  languages.python = {
+  languages.javascript = {
     enable = true;
-    venv.enable = true;
-    venv.requirements = ./requirements.txt;
+    package = pkgs.nodejs_24;
+    npm = {
+      enable = true;
+      install.enable = true;
+    };
   };
 
-  processes.docs.exec = "mkdocs serve";
+  processes.web.exec = "npm run dev";
 }

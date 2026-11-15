@@ -3,11 +3,11 @@ compatibility_date = "2026-03-24"
 preview_urls = true
 
 [build]
-command = "pip install -r requirements.txt && mkdocs build"
+command = "npm ci && npm run build"
 
 [[routes]]
 pattern = "tacosprint.org"
 custom_domain = true
 
 [assets]
-directory = "./site"
+directory = "./dist"
