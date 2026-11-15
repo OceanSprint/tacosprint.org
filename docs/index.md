@@ -1,14 +1,14 @@
-# Nix TacoSprint 2026
+# Nix TacoSprint 2027
 <div class="bg-primary text-white rounded-lg p-8 mb-8">
   <div class="grid md:grid-cols-2 gap-8">
     <div class="flex flex-col justify-between">
       <p class="text-lg mb-4">A week of Nix hacking, collaboration, and knowledge sharing on the Pacific coast of Mexico.</p>
 
       <div>
-        <a href="https://app.formbricks.com/s/x2is8u81ker4rlbhw2i8lv2w" class="bg-white text-primary font-bold text-xl py-4 px-8 rounded-md hover:bg-gray-100 transition duration-200 inline-block mb-4">
-          Apply Now
+        <a href="#sponsors" class="bg-white text-primary font-bold text-xl py-4 px-8 rounded-md hover:bg-gray-100 transition duration-200 inline-block mb-4">
+          Become a Sponsor
         </a>
-        <p class="text-sm text-white text-opacity-70"><strong>Application deadline:</strong> May 15, 2026</p>
+        <p class="text-sm text-white text-opacity-70">Attendee applications will open soon.</p>
       </div>
     </div>
 
@@ -16,8 +16,8 @@
       <div class="space-y-6">
         <div>
           <h3 class="font-medium text-white text-opacity-70 uppercase text-sm tracking-wider mb-1 mt-0">When</h3>
-          <p class="text-lg">June 20 &ndash; 26, 2026</p>
-          <p class="text-sm text-white text-opacity-70">Saturday to Friday</p>
+          <p class="text-lg">June 2027</p>
+          <p class="text-sm text-white text-opacity-70">Exact dates to be announced</p>
         </div>
 
         <div>
@@ -88,14 +88,8 @@
 
 <div class="bg-white border border-gray-200 rounded-md p-6 mb-8">
   <div class="mb-5">
-    <p class="text-gray-800 mb-6">Apply now to secure your spot for this collaborative coding event.</p>
-    <p class="text-gray-600 text-sm mb-4"><strong>Application deadline:</strong> May 15, 2026</p>
-
-    <div class="mb-3">
-      <a href="https://app.formbricks.com/s/x2is8u81ker4rlbhw2i8lv2w" class="bg-primary text-white font-medium py-2 px-5 rounded-md hover:bg-primary-dark transition duration-200 inline-block">
-        Fill Out Application Form
-      </a>
-    </div>
+    <p class="text-gray-800 mb-4">Applications for Nix TacoSprint 2027 will open soon.</p>
+    <p class="text-gray-600 text-sm">Check back for the application form and deadline once the June dates are confirmed.</p>
   </div>
 </div>
 
@@ -156,7 +150,7 @@
   </div>
 </div>
 
-## Participants
+## 2026 Participants
 
 <div class="bg-white border border-gray-200 rounded-md p-6 mb-8">
   <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
@@ -255,28 +249,41 @@
   </div>
 
   <div class="border-t border-gray-100 pt-6">
-    <h4 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-3">Diamond Sponsors</h4>
-    <p class="text-gray-400 text-sm mb-8">Your company here</p>
-
-    <h4 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-3">Gold Sponsors</h4>
-    <div class="flex items-center space-x-6 mb-8">
-      <a href="https://opensource.fb.com/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" class="h-8">
-      </a>
-    </div>
-
-    <h4 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-3">Company Sponsors</h4>
-    <div class="flex items-center space-x-6 mb-8">
-      <a href="https://cachix.org/" target="_blank">
-        <img src="/assets/logos/cachix.png" alt="Cachix" class="h-8">
-      </a>
-      <a href="https://numtide.com/" target="_blank">
-        <img src="/assets/logos/numtide.svg" alt="Numtide" class="h-8">
-      </a>
-    </div>
-
-    <h4 class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-3">Individual Sponsors</h4>
-    <p class="text-gray-400 text-sm">Your name here</p>
+    <h3 id="sponsorship-inquiry" class="font-medium text-gray-500 uppercase text-sm tracking-wider mb-3">Become a Sponsor</h3>
+    <p id="sponsorship-help" class="text-gray-600 text-sm mb-4">Tell us how you would like to support TacoSprint 2027. This form opens an email draft to sponsors@tacosprint.org in your email app. Review and send it there to complete your inquiry.</p>
+    <form id="sponsorship-form" aria-labelledby="sponsorship-inquiry" aria-describedby="sponsorship-help" hidden>
+      <div class="grid md:grid-cols-2 gap-6 mb-4">
+        <div>
+          <label for="sponsor-name">Your name (required)</label>
+          <input id="sponsor-name" name="name" autocomplete="name" maxlength="150" required>
+        </div>
+        <div>
+          <label for="sponsor-email">Your email (required)</label>
+          <input id="sponsor-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+        </div>
+        <div>
+          <label for="sponsor-company">Company or organization</label>
+          <input id="sponsor-company" name="company" autocomplete="organization" maxlength="200">
+        </div>
+        <div>
+          <label for="sponsor-level">Sponsorship level</label>
+          <select id="sponsor-level" name="level">
+            <option value="Let's discuss">Let's discuss</option>
+            <option value="Diamond (USD 8,000)">Diamond (USD 8,000)</option>
+            <option value="Gold (USD 4,000)">Gold (USD 4,000)</option>
+            <option value="Company (USD 1,500)">Company (USD 1,500)</option>
+            <option value="Individual (USD 500)">Individual (USD 500)</option>
+          </select>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="sponsor-message">How would you like to help? (required)</label>
+        <textarea id="sponsor-message" name="message" rows="5" maxlength="2000" required></textarea>
+      </div>
+      <button type="submit" class="bg-primary text-white font-medium py-2 px-5 rounded-md hover:bg-primary-dark transition duration-200">Prepare Sponsorship Email</button>
+      <p id="sponsorship-status" role="status" class="text-gray-600 text-sm mt-2"></p>
+    </form>
+    <p class="text-gray-600 text-sm mt-2">You can also email <a href="mailto:sponsors@tacosprint.org?subject=TacoSprint%202027%20sponsorship" class="text-primary">sponsors@tacosprint.org</a> directly.</p>
   </div>
 </div>
 
