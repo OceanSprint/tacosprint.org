@@ -22,7 +22,8 @@ extra_css:
 extra_javascript:
   - assets/javascripts/sponsorship.js
 nav:
-  - Home: index.md
+  - 2027 Edition: index.md
+  - 2026 Edition: 2026.md
 copyright: Copyright &copy; 2026 Domen Kozar and Farid Zakaria
 plugins:
   social:

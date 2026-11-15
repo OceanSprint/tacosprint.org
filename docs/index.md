@@ -150,57 +150,7 @@
   </div>
 </div>
 
-## 2026 Participants
-
-<div class="bg-white border border-gray-200 rounded-md p-6 mb-8">
-  <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-    <a href="https://github.com/vic" class="flex flex-col items-center text-center">
-      <img src="https://github.com/vic.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
-      <span class="font-medium text-gray-800">Victor Borja</span>
-      <span class="text-sm text-primary">@vic</span>
-    </a>
-    <a href="https://github.com/adeci" class="flex flex-col items-center text-center">
-      <img src="https://github.com/adeci.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
-      <span class="font-medium text-gray-800">Alex Decious</span>
-      <span class="text-sm text-primary">@adeci</span>
-    </a>
-    <a href="https://github.com/alurm" class="flex flex-col items-center text-center">
-      <img src="https://github.com/alurm.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
-      <span class="font-medium text-gray-800">Alan Urmancheev</span>
-      <span class="text-sm text-primary">@alurm</span>
-    </a>
-    <a href="https://github.com/jonringer" class="flex flex-col items-center text-center">
-      <img src="https://github.com/jonringer.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
-      <span class="font-medium text-gray-800">Jon Ringer</span>
-      <span class="text-sm text-primary">@jonringer</span>
-    </a>
-    <a href="https://github.com/dayofdoom" class="flex flex-col items-center text-center">
-      <img src="https://github.com/dayofdoom.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
-      <span class="font-medium text-gray-800">Jared Siegel</span>
-      <span class="text-sm text-primary">@dayofdoom</span>
-    </a>
-    <a href="https://github.com/marijanp" class="flex flex-col items-center text-center">
-      <img src="https://github.com/marijanp.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
-      <span class="font-medium text-gray-800">Marijan Petričević</span>
-      <span class="text-sm text-primary">@marijanp</span>
-    </a>
-    <a href="https://github.com/ghuntley" class="flex flex-col items-center text-center">
-      <img src="https://github.com/ghuntley.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
-      <span class="font-medium text-gray-800">Geoffrey Huntley</span>
-      <span class="text-sm text-primary">@ghuntley</span>
-    </a>
-    <a href="https://github.com/domenkozar" class="flex flex-col items-center text-center">
-      <img src="https://github.com/domenkozar.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
-      <span class="font-medium text-gray-800">Domen Kožar</span>
-      <span class="text-sm text-primary">@domenkozar</span>
-    </a>
-    <a href="https://github.com/fzakaria" class="flex flex-col items-center text-center">
-      <img src="https://github.com/fzakaria.png?size=160" alt="" width="80" height="80" loading="lazy" class="w-20 h-20 rounded-full mb-3">
-      <span class="font-medium text-gray-800">Farid Zakaria</span>
-      <span class="text-sm text-primary">@fzakaria</span>
-    </a>
-  </div>
-</div>
+See the [2026 edition](2026.md) for past participants and sponsors.
 
 ## Sponsors
 
