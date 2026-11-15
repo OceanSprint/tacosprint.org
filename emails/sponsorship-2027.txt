@@ -1,0 +1,25 @@
+Reply-To: sponsors@tacosprint.org
+Subject: Support Nix TacoSprint in June 2027
+
+Hi [Name],
+
+We're organizing Nix TacoSprint in June 2027 in La Saladita, Mexico, bringing together around 16 Nix developers for a week of hacking, collaboration, and knowledge sharing. Exact dates will be announced soon.
+
+Would [Company] be interested in sponsoring the sprint? Sponsorship helps cover accommodation, catering, T shirt printing, and activities so participants can focus on working together.
+
+Our sponsorship levels are:
+
+* Diamond: USD 8,000
+* Gold: USD 4,000
+* Company: USD 1,500
+* Individual: USD 500
+
+Depending on the level, benefits include website and T shirt recognition, reserved attendee seats, and opportunities to share your work with the group. The full sponsorship details are at https://tacosprint.org/#sponsors.
+
+We would be happy to discuss a level that fits your goals. Reply to sponsors@tacosprint.org to get in touch.
+
+Thanks for considering supporting the Nix community!
+
+Domen and Farid
+Nix TacoSprint
+https://tacosprint.org/
