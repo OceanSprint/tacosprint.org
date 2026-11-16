@@ -281,7 +281,25 @@ h3 {
 .place-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "details heading";
+  align-items: start;
   gap: 100px;
+}
+.place-heading {
+  grid-area: heading;
+}
+.place-details {
+  grid-area: details;
+}
+.section-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 55%;
+  border-radius: 5px;
+  margin-bottom: 28px;
 }
 .place-heading > p {
   font-size: var(--text-body);
@@ -317,6 +335,7 @@ h3 {
 .practical-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: start;
   gap: 100px;
 }
 .faq-list {
@@ -360,11 +379,16 @@ details p {
 .section-heading {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "copy heading";
   gap: 100px;
   align-items: end;
   margin-bottom: 45px;
 }
+.section-heading > div {
+  grid-area: heading;
+}
 .section-heading > p {
+  grid-area: copy;
   font-size: var(--text-body);
   color: var(--muted-inverse);
   max-width: 400px;
@@ -920,6 +944,15 @@ textarea {
   }
   .about-copy {
     max-width: none;
+  }
+  .place-grid {
+    grid-template-areas: "heading" "details";
+  }
+  .section-heading {
+    grid-template-areas: "heading" "copy";
+  }
+  .section-photo {
+    margin-bottom: 24px;
   }
   .place-heading > p {
     max-width: none;
