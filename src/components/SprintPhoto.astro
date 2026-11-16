@@ -1,11 +1,18 @@
-<figure class="sprint-photo">
+---
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+
+<figure class:list={["sprint-photo", { compact }]}>
   <a
     href="/assets/2026/sprint-working.webp"
     aria-label="View the full-size photo of TacoSprint 2026"
   >
     <img
       src="/assets/2026/sprint-working.webp"
-      alt="Sprint participants working on laptops around a shared table at the villa"
+      alt="Sprint participants gathered around the table at the villa in the evening"
       width="1676"
       height="1262"
       loading="lazy"
@@ -14,7 +21,7 @@
   </a>
   <figcaption>
     <span>TacoSprint 2026 · La Saladita</span>
-    <span>Working together at the villa.</span>
+    <span>Dinner at the villa.</span>
   </figcaption>
 </figure>
 
@@ -22,6 +29,13 @@
   .sprint-photo {
     grid-column: 1 / -1;
     margin: 0;
+  }
+  .compact {
+    grid-column: auto;
+  }
+  .compact img {
+    height: var(--hero-photo-height);
+    aspect-ratio: auto;
   }
   a {
     display: block;
@@ -49,8 +63,15 @@
     color: var(--ink);
     font-weight: 600;
   }
+  @media (max-width: 800px) {
+    .compact img {
+      height: auto;
+      aspect-ratio: 16 / 10;
+    }
+  }
   @media (max-width: 580px) {
-    img {
+    img,
+    .compact img {
       aspect-ratio: 4 / 3;
     }
   }

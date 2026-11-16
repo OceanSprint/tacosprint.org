@@ -57,26 +57,29 @@ import SprintPhoto from "../components/SprintPhoto.astro";
         Applications opening soon <span aria-hidden="true">↗</span>
       </a>
     </div>
-    <div class="hero-image">
-      <img
-        src="/assets/villas.jpeg"
-        alt="Two villas between the palm trees and the Pacific coast at La Saladita"
-        width="1280"
-        height="578"
-        fetchpriority="high"
-      />
-      <div class="image-caption">
-        <span>
-          <span class="status-dot"></span> BEACHFRONT VILLAS / VENUE TO BE
-          CONFIRMED
-        </span>
-        <span>THE PACIFIC COAST, MEXICO ↗</span>
+    <div class="hero-photos">
+      <div class="hero-image">
+        <img
+          src="/assets/villas.jpeg"
+          alt="Two villas between the palm trees and the Pacific coast at La Saladita"
+          width="1280"
+          height="578"
+          fetchpriority="high"
+        />
+        <div class="image-caption">
+          <span>
+            <span class="status-dot"></span> BEACHFRONT VILLAS / VENUE TO BE
+            CONFIRMED
+          </span>
+          <span>THE PACIFIC COAST, MEXICO ↗</span>
+        </div>
+        <div class="photo-stamp" aria-hidden="true">
+          <span>LA SALADITA</span>
+          <Icon name="sun" />
+          <span>JUNE 2027</span>
+        </div>
       </div>
-      <div class="photo-stamp" aria-hidden="true">
-        <span>LA SALADITA</span>
-        <Icon name="sun" />
-        <span>JUNE 2027</span>
-      </div>
+      <SprintPhoto compact />
     </div>
   </section>
   <div class="ticker" aria-label="Sprint details">
@@ -118,7 +121,6 @@ import SprintPhoto from "../components/SprintPhoto.astro";
         2026 participants and sponsors <Icon name="arrow" />
       </a>
     </div>
-    <SprintPhoto />
     <div class="sprint-pillars">
       <div>
         <Icon name="code" />
