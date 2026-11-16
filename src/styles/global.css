@@ -228,7 +228,7 @@ h3 {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: center 55%;
+  object-position: 90% center;
 }
 .about-grid {
   display: grid;
@@ -822,7 +822,7 @@ textarea {
 }
 @media (max-width: 580px) {
   .hero-photos {
-    --hero-photo-height: 285px;
+    --hero-photo-height: min(285px, calc((100vw - 36px) / 1.2));
   }
   .container {
     width: calc(100% - 36px);
@@ -865,9 +865,6 @@ textarea {
   }
   .hero-image {
     height: 285px;
-  }
-  .hero-image > img {
-    object-position: 61% center;
   }
   .section {
     padding-block: 56px;
