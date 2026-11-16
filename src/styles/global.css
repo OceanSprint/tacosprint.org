@@ -8,6 +8,10 @@
   --line: #d5e3dc;
   --surface-green: #eef6f2;
   --muted-inverse: #d6e9df;
+  --text-body: 17px;
+  --text-small: 14px;
+  --text-label: 15px;
+  --text-nav: 16px;
   --heading: "Space Grotesk Variable", sans-serif;
   --body: "DM Sans Variable", sans-serif;
   font-family: var(--body);
@@ -93,11 +97,12 @@ h3 {
   line-height: 1.1;
 }
 h2 {
-  font-size: clamp(36px, 4.1vw, 58px);
-  letter-spacing: -2.8px;
+  font-size: clamp(34px, 3.6vw, 52px);
+  letter-spacing: -2px;
+  text-wrap: balance;
 }
 h3 {
-  font-size: 21px;
+  font-size: 22px;
   letter-spacing: -0.6px;
 }
 .container {
@@ -142,9 +147,16 @@ h3 {
 }
 .site-header nav {
   display: flex;
-  gap: 31px;
-  font-size: 12px;
+  gap: 28px;
+  font-size: var(--text-nav);
   font-weight: 600;
+}
+.site-header nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: 10px;
+  white-space: nowrap;
 }
 .site-header nav a[aria-current] {
   color: var(--accent);
@@ -152,12 +164,12 @@ h3 {
 .button {
   background: var(--accent);
   color: var(--paper);
-  padding: 18px 24px;
+  padding: 16px 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
-  font-size: 13px;
+  min-height: 48px;
+  font-size: var(--text-label);
   font-weight: 600;
   border: 1px solid var(--accent);
   cursor: pointer;
@@ -170,9 +182,9 @@ h3 {
   transform: translateY(-2px);
 }
 .button-small {
-  padding: 13px 17px;
-  font-size: 11px;
-  gap: 20px;
+  padding: 12px 18px;
+  font-size: var(--text-small);
+  min-height: 44px;
 }
 .hero {
   padding-top: 20px;
@@ -206,7 +218,7 @@ h3 {
 .hero-welcome {
   margin: 14px 0 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: var(--text-small);
   line-height: 1.6;
 }
 .hero-photos {
@@ -225,7 +237,7 @@ h3 {
 .hero-venue figcaption {
   padding-top: 15px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: var(--text-small);
   line-height: 1.6;
 }
 .hero-image {
@@ -250,17 +262,18 @@ h3 {
   max-width: 450px;
 }
 .about-copy > p {
-  font-size: 14px;
+  font-size: var(--text-body);
   color: var(--muted);
 }
 .text-link {
   display: inline-flex;
   align-items: center;
   gap: 25px;
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 600;
   border-bottom: 1px solid var(--ink);
-  padding-bottom: 8px;
+  padding-block: 10px;
+  min-height: 44px;
 }
 .place-section {
   background: var(--surface-green);
@@ -271,7 +284,7 @@ h3 {
   gap: 100px;
 }
 .place-heading > p {
-  font-size: 14px;
+  font-size: var(--text-body);
   max-width: 340px;
   color: var(--muted);
   margin-top: 24px;
@@ -293,12 +306,12 @@ h3 {
   margin-bottom: 13px;
 }
 .place-details p {
-  font-size: 13px;
+  font-size: var(--text-body);
   color: var(--muted);
   margin-bottom: 0;
 }
 .place-details .small-copy {
-  font-size: 11px;
+  font-size: var(--text-small);
   margin-top: 12px;
 }
 .practical-grid {
@@ -322,7 +335,7 @@ summary {
   gap: 15px;
   font-family: var(--heading);
   font-weight: 500;
-  font-size: 16px;
+  font-size: clamp(18px, 1.6vw, 21px);
 }
 summary::-webkit-details-marker {
   display: none;
@@ -336,7 +349,7 @@ details[open] summary span {
   transform: rotate(45deg);
 }
 details p {
-  font-size: 13px;
+  font-size: var(--text-body);
   color: var(--muted);
   margin: 17px 30px 0 0;
 }
@@ -352,7 +365,7 @@ details p {
   margin-bottom: 45px;
 }
 .section-heading > p {
-  font-size: 14px;
+  font-size: var(--text-body);
   color: var(--muted-inverse);
   max-width: 400px;
   margin-bottom: 4px;
@@ -384,7 +397,7 @@ details p {
   align-items: center;
 }
 .tier-top h3 {
-  font-size: 18px;
+  font-size: 22px;
 }
 .tier-price {
   font: 500 clamp(30px, 3vw, 42px) var(--heading);
@@ -392,7 +405,7 @@ details p {
   margin: 22px 0 12px;
 }
 .tier-price small {
-  font: 9px var(--body);
+  font: 14px var(--body);
   letter-spacing: 0.3px;
   opacity: 0.7;
 }
@@ -401,7 +414,7 @@ details p {
   padding: 20px 0 25px;
   margin: 0;
   border-top: 1px solid #ffffff35;
-  font-size: 11px;
+  font-size: var(--text-small);
   line-height: 1.6;
   flex-grow: 1;
 }
@@ -420,7 +433,7 @@ details p {
   gap: 10px;
   border-top: 1px solid #ffffff35;
   padding-top: 17px;
-  font-size: 11px;
+  font-size: var(--text-small);
 }
 .featured .tier-link {
   border-color: var(--line);
@@ -453,12 +466,12 @@ details p {
   scroll-margin-top: 35px;
 }
 .inquiry-grid h3 {
-  font-size: 40px;
-  letter-spacing: -2px;
+  font-size: 32px;
+  letter-spacing: -1px;
   margin-bottom: 20px;
 }
 .inquiry-grid > div > p {
-  font-size: 13px;
+  font-size: var(--text-body);
   color: var(--muted-inverse);
   max-width: 330px;
 }
@@ -466,7 +479,7 @@ details p {
   border-color: #ffffff50;
 }
 .inquiry-grid .form-note {
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 25px;
   color: var(--muted-inverse);
 }
@@ -478,12 +491,12 @@ details p {
 }
 label {
   display: block;
-  font-size: 11px;
+  font-size: var(--text-small);
   margin-bottom: 9px;
 }
 label span {
   color: var(--muted-inverse);
-  font-size: 9px;
+  font-size: 12px;
 }
 input,
 select,
@@ -492,10 +505,11 @@ textarea {
   min-width: 0;
   background: #ffffff08;
   color: var(--paper);
-  border: 1px solid #ffffff40;
+  border: 1px solid #ffffff99;
   border-radius: 3px;
   padding: 12px;
-  font-size: 12px;
+  font-size: 16px;
+  min-height: 48px;
 }
 input::placeholder,
 textarea::placeholder {
@@ -503,18 +517,18 @@ textarea::placeholder {
 }
 select {
   color-scheme: dark;
-  height: 42px;
+  height: 48px;
 }
 option {
   background: var(--ink);
 }
 textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 128px;
   margin-bottom: 17px;
 }
 .form-note {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.6;
   margin: 13px 0 0;
 }
@@ -539,18 +553,18 @@ textarea {
   filter: grayscale(100%);
 }
 .organizer h3 {
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   gap: 25px;
 }
 .organizer p {
-  font-size: 11px;
+  font-size: var(--text-small);
   color: var(--muted);
   margin: 8px 0 5px;
 }
 .handle {
   color: var(--accent);
-  font-size: 10px;
+  font-size: var(--text-small);
 }
 .site-footer {
   border-top: 1px solid var(--line);
@@ -561,7 +575,7 @@ textarea {
   align-items: center;
 }
 .site-footer p {
-  font-size: 10px;
+  font-size: 13px;
   color: var(--muted);
   margin: 9px 0 0;
 }
@@ -569,7 +583,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 12px 24px;
-  font-size: 10px;
+  font-size: var(--text-small);
 }
 .site-footer .copyright {
   text-align: right;
@@ -627,7 +641,7 @@ textarea {
   margin-bottom: 7px;
 }
 .participant span {
-  font-size: 12px;
+  font-size: var(--text-small);
   color: var(--accent);
 }
 .archive-sponsors {
@@ -673,14 +687,20 @@ textarea {
   }
 }
 @media (max-width: 1100px) {
+  .tier-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tier:nth-child(2) {
+    border-right: 0;
+  }
+  .tier:nth-child(-n + 2) {
+    border-bottom: 1px solid #ffffff35;
+  }
   .hero-photos {
     --hero-photo-height: 350px;
   }
   .container {
     width: calc(100% - 72px);
-  }
-  .site-header nav {
-    gap: 20px;
   }
   .hero h1 {
     letter-spacing: -4px;
@@ -710,11 +730,26 @@ textarea {
     height: 50px;
   }
   .organizer h3 {
-    font-size: 16px;
+    font-size: 20px;
     gap: 12px;
   }
   .site-footer {
     gap: 25px;
+  }
+}
+@media (max-width: 900px) {
+  .site-header {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px 24px;
+    padding-block: 18px 8px;
+  }
+  .site-header nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: flex-start;
+    gap: 32px;
   }
 }
 @media (max-width: 800px) {
@@ -725,29 +760,12 @@ textarea {
   .container {
     width: calc(100% - 48px);
   }
-  .site-header {
-    height: 88px;
-  }
-  .site-header nav {
-    gap: 18px;
-  }
-  .site-header nav a {
-    font-size: 10px;
-  }
-  .site-header nav a:first-child {
-    display: none;
-  }
   .wordmark {
     font-size: 25px;
   }
   .brand-symbol {
     width: 43px;
     height: 36px;
-  }
-  .button-small {
-    font-size: 10px;
-    padding: 12px;
-    gap: 12px;
   }
   .hero h1 {
     font-size: clamp(60px, 8.6vw, 76px);
@@ -766,8 +784,8 @@ textarea {
     padding-block: 70px;
   }
   h2 {
-    font-size: 38px;
-    letter-spacing: -2px;
+    font-size: clamp(34px, 3.6vw, 52px);
+    letter-spacing: -1.5px;
   }
   .about-grid,
   .place-grid,
@@ -777,7 +795,7 @@ textarea {
     column-gap: 35px;
   }
   .about-copy > p {
-    font-size: 13px;
+    font-size: var(--text-body);
   }
   .tier-grid {
     grid-template-columns: 1fr 1fr;
@@ -795,8 +813,6 @@ textarea {
   }
   .tier-price {
     font-size: 39px;
-  }
-  .tier-top {
   }
   .tier ul {
     min-height: 145px;
@@ -831,31 +847,32 @@ textarea {
   }
 }
 @media (max-width: 580px) {
+  .site-header {
+    gap: 6px 8px;
+    padding-block: 14px 6px;
+  }
+  .site-header nav {
+    justify-content: space-between;
+    gap: 16px;
+    font-size: var(--text-label);
+  }
+  .site-header .button-small {
+    font-size: 13px;
+    padding-inline: 12px;
+  }
   .hero-photos {
     --hero-photo-height: min(285px, calc((100vw - 36px) / 1.2));
   }
   .container {
     width: calc(100% - 36px);
   }
-  .site-header {
-    height: 78px;
-    gap: 10px;
-  }
-  .site-header nav {
-    display: none;
-  }
   .wordmark {
-    font-size: 24px;
+    font-size: 22px;
   }
   .brand-symbol {
-    width: 40px;
-    height: 34px;
+    width: 36px;
+    height: 30px;
     margin-right: 6px;
-  }
-  .button-small {
-    font-size: 9px;
-    gap: 10px;
-    padding: 11px;
   }
   .hero {
     padding-top: 27px;
@@ -875,7 +892,7 @@ textarea {
     margin-top: 24px;
   }
   .hero-welcome {
-    font-size: 12px;
+    font-size: var(--text-small);
     margin-top: 12px;
   }
   .hero-image {
@@ -890,8 +907,8 @@ textarea {
     margin-bottom: 20px;
   }
   h2 {
-    font-size: 39px;
-    letter-spacing: -2px;
+    font-size: clamp(34px, 3.6vw, 52px);
+    letter-spacing: -1.5px;
   }
   .about-grid,
   .place-grid,
@@ -914,7 +931,7 @@ textarea {
     font-size: 20px;
   }
   summary {
-    font-size: 16px;
+    font-size: clamp(18px, 1.6vw, 21px);
   }
   .section-heading {
     gap: 22px;
@@ -923,7 +940,14 @@ textarea {
     max-width: none;
   }
   .tier-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .tier:nth-child(n) {
+    border-right: 0;
+    border-bottom: 1px solid #ffffff35;
+  }
+  .tier:last-child {
+    border-bottom: 0;
   }
   .tier {
     padding: 20px 14px;
@@ -932,7 +956,7 @@ textarea {
     align-content: start;
   }
   .tier-top h3 {
-    font-size: 17px;
+    font-size: 22px;
   }
   .tier-price {
     font-size: 31px;
@@ -940,22 +964,22 @@ textarea {
     margin-top: 10px;
   }
   .tier li {
-    font-size: 10px;
+    font-size: var(--text-small);
     gap: 6px;
   }
   .tier ul {
-    min-height: 155px;
+    min-height: 0;
     padding-block: 17px;
   }
   .tier-link {
-    font-size: 10px;
+    font-size: var(--text-small);
   }
   .inquiry-grid {
     padding-top: 50px;
     gap: 30px;
   }
   .inquiry-grid h3 {
-    font-size: 35px;
+    font-size: 32px;
   }
   .inquiry-grid > div > p {
     max-width: none;
@@ -964,15 +988,15 @@ textarea {
     margin-top: 20px;
   }
   .form-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 17px 12px;
   }
   label {
-    font-size: 10px;
+    font-size: var(--text-small);
     line-height: 1.5;
   }
   label span {
-    font-size: 8px;
+    font-size: 12px;
   }
   input,
   select,
@@ -982,10 +1006,10 @@ textarea {
   }
   input::placeholder,
   textarea::placeholder {
-    font-size: 12px;
+    font-size: 16px;
   }
   select {
-    font-size: 12px;
+    font-size: 16px;
   }
   .organizers {
     grid-template-columns: 1fr;
@@ -999,24 +1023,20 @@ textarea {
     height: 61px;
   }
   .organizer h3 {
-    font-size: 19px;
+    font-size: 20px;
   }
   .organizer p {
-    font-size: 12px;
+    font-size: var(--text-small);
   }
   .handle {
-    font-size: 11px;
+    font-size: var(--text-small);
   }
   .site-footer {
     padding-block: 30px;
     gap: 28px 10px;
   }
-  .site-footer > div > p {
-    max-width: 170px;
-    line-height: 1.6;
-  }
   .footer-links {
-    font-size: 10px;
+    font-size: var(--text-small);
     gap: 13px;
   }
   .archive-hero {
