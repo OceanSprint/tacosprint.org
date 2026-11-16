@@ -169,45 +169,13 @@ h3 {
   color: white;
   transform: translateY(-2px);
 }
-.button svg {
-  width: 18px;
-  height: 18px;
-}
 .button-small {
   padding: 13px 17px;
   font-size: 11px;
   gap: 20px;
 }
 .hero {
-  padding-top: 42px;
-}
-.hero-topline {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.hero-topline .eyebrow {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.status-dot {
-  width: 7px;
-  height: 7px;
-  display: inline-block;
-  background: var(--accent);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-.hero-coordinate {
-  font-size: 10px;
-  letter-spacing: 1px;
-}
-.hero-coordinate > span {
-  font-size: 24px;
-  vertical-align: middle;
-  margin-left: 12px;
+  padding-top: 20px;
 }
 .hero-content {
   padding: 36px 0 35px;
@@ -252,14 +220,6 @@ h3 {
   align-items: center;
   gap: 8px;
 }
-.hero-meta svg {
-  width: 15px;
-  height: 15px;
-}
-.hero-meta-people {
-  border-left: 1px solid var(--line);
-  padding-left: 23px;
-}
 .hero-cta {
   font-size: 10px;
   font-weight: 500;
@@ -281,8 +241,14 @@ h3 {
 .hero-photos .hero-image {
   height: var(--hero-photo-height);
 }
-.hero-photos .image-caption > span:last-child {
-  display: none;
+.hero-venue {
+  margin: 0;
+}
+.hero-venue figcaption {
+  padding-top: 15px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
 }
 .hero-image {
   height: 400px;
@@ -296,84 +262,6 @@ h3 {
   object-fit: cover;
   object-position: center 55%;
 }
-.hero-image:after {
-  content: "";
-  position: absolute;
-  inset: 50% 0 0;
-  background: linear-gradient(transparent, #003b2999);
-  pointer-events: none;
-}
-.image-caption {
-  position: absolute;
-  z-index: 1;
-  bottom: 23px;
-  left: 26px;
-  right: 26px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  color: white;
-  font-size: 9px;
-  letter-spacing: 1px;
-}
-.image-caption > span:first-child {
-  display: flex;
-  gap: 9px;
-  align-items: center;
-}
-.image-caption .status-dot {
-  background: var(--paper);
-}
-.photo-stamp {
-  width: 126px;
-  height: 126px;
-  position: absolute;
-  z-index: 1;
-  top: 25px;
-  right: 25px;
-  border-radius: 50%;
-  background: var(--paper);
-  color: var(--ink);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  transform: rotate(13deg);
-  box-shadow: 0 2px 10px #0001;
-}
-.photo-stamp span {
-  font-size: 8px;
-  letter-spacing: 1.6px;
-  font-weight: 600;
-}
-.photo-stamp svg {
-  height: 33px;
-  width: 33px;
-  color: var(--accent);
-}
-.ticker {
-  margin-top: 38px;
-  background: var(--flag-green);
-  color: var(--paper);
-  overflow: hidden;
-}
-.ticker > div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 30px;
-  min-width: 850px;
-  padding: 23px 30px;
-  font-family: var(--heading);
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-.ticker-star {
-  color: var(--paper);
-  font-size: 25px;
-}
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -383,13 +271,7 @@ h3 {
 .about-copy {
   max-width: 450px;
 }
-.large-copy {
-  font-family: var(--heading);
-  font-size: 25px;
-  line-height: 1.3;
-  letter-spacing: -0.8px;
-}
-.about-copy > p:not(.large-copy) {
+.about-copy > p {
   font-size: 14px;
   color: var(--muted);
 }
@@ -402,33 +284,6 @@ h3 {
   border-bottom: 1px solid var(--ink);
   padding-bottom: 8px;
 }
-.text-link svg {
-  height: 17px;
-  width: 17px;
-}
-.sprint-pillars {
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  border-top: 1px solid var(--line);
-  padding-top: 36px;
-}
-.sprint-pillars svg {
-  color: var(--accent);
-  margin-bottom: 25px;
-  width: 29px;
-  height: 29px;
-}
-.sprint-pillars h3 {
-  margin-bottom: 15px;
-}
-.sprint-pillars p {
-  font-size: 13px;
-  color: var(--muted);
-  margin: 0;
-  max-width: 300px;
-}
 .place-section {
   background: var(--surface-green);
 }
@@ -437,30 +292,11 @@ h3 {
   grid-template-columns: 1fr 1fr;
   gap: 100px;
 }
-.place-heading > p:not(.eyebrow) {
+.place-heading > p {
   font-size: 14px;
   max-width: 340px;
   color: var(--muted);
   margin-top: 24px;
-}
-.location-label {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-top: 45px;
-  font-size: 12px;
-  letter-spacing: 1.4px;
-  line-height: 1.6;
-}
-.location-label svg {
-  color: var(--accent);
-  width: 33px;
-  height: 33px;
-}
-.location-label small {
-  font-size: 9px;
-  color: var(--muted);
-  letter-spacing: 1px;
 }
 .place-details article {
   display: flex;
@@ -474,12 +310,6 @@ h3 {
 }
 .place-details article:last-child {
   padding-bottom: 0;
-}
-.detail-number {
-  font-family: var(--heading);
-  font-size: 12px;
-  color: var(--accent);
-  margin-top: 4px;
 }
 .place-details h3 {
   margin-bottom: 13px;
@@ -497,9 +327,6 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
-}
-.practical-grid .button {
-  margin-top: 30px;
 }
 .faq-list {
   border-top: 1px solid var(--line);
@@ -546,9 +373,6 @@ details p {
   align-items: end;
   margin-bottom: 45px;
 }
-.sponsorship .eyebrow {
-  color: var(--paper);
-}
 .section-heading > p {
   font-size: 14px;
   color: var(--muted-inverse);
@@ -580,18 +404,9 @@ details p {
   flex-wrap: wrap;
   gap: 9px;
   align-items: center;
-  min-height: 35px;
 }
 .tier-top h3 {
   font-size: 18px;
-}
-.tier-top > span {
-  font-size: 7px;
-  letter-spacing: 0.5px;
-  background: var(--ink);
-  color: var(--paper);
-  padding: 4px 6px;
-  border-radius: 2px;
 }
 .tier-price {
   font: 500 clamp(30px, 3vw, 42px) var(--heading);
@@ -602,14 +417,6 @@ details p {
   font: 9px var(--body);
   letter-spacing: 0.3px;
   opacity: 0.7;
-}
-.tier-caption {
-  font-size: 11px;
-  color: var(--muted-inverse);
-  min-height: 38px;
-}
-.featured .tier-caption {
-  color: var(--muted);
 }
 .tier ul {
   list-style: none;
@@ -628,12 +435,6 @@ details p {
   gap: 9px;
   margin-bottom: 10px;
 }
-.tier li > span {
-  color: var(--paper);
-}
-.featured li > span {
-  color: var(--accent);
-}
 .tier-link {
   display: flex;
   align-items: center;
@@ -645,10 +446,6 @@ details p {
 }
 .featured .tier-link {
   border-color: var(--line);
-}
-.tier-link svg {
-  width: 17px;
-  height: 17px;
 }
 .sponsorship a:hover {
   color: var(--paper);
@@ -682,7 +479,7 @@ details p {
   letter-spacing: -2px;
   margin-bottom: 20px;
 }
-.inquiry-grid > div > p:not(.eyebrow) {
+.inquiry-grid > div > p {
   font-size: 13px;
   color: var(--muted-inverse);
   max-width: 330px;
@@ -749,9 +546,6 @@ textarea {
   gap: 45px;
   align-items: center;
 }
-.organizers .eyebrow {
-  font-size: 9px;
-}
 .organizers h2 {
   font-size: 43px;
 }
@@ -771,9 +565,6 @@ textarea {
   display: flex;
   gap: 25px;
 }
-.organizer h3 > span {
-  color: var(--accent);
-}
 .organizer p {
   font-size: 11px;
   color: var(--muted);
@@ -787,16 +578,9 @@ textarea {
   border-top: 1px solid var(--line);
   padding-block: 42px;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr auto;
   gap: 50px;
   align-items: center;
-}
-.site-footer .wordmark {
-  font-size: 23px;
-}
-.site-footer .brand-symbol {
-  width: 38px;
-  height: 32px;
 }
 .site-footer p {
   font-size: 10px;
@@ -805,8 +589,8 @@ textarea {
 }
 .footer-links {
   display: flex;
-  flex-direction: column;
-  gap: 9px;
+  flex-wrap: wrap;
+  gap: 12px 24px;
   font-size: 10px;
 }
 .site-footer .copyright {
@@ -927,9 +711,6 @@ textarea {
     gap: 13px;
     font-size: 8px;
   }
-  .hero-meta-people {
-    padding-left: 13px;
-  }
   .hero-image {
     height: 350px;
   }
@@ -994,13 +775,6 @@ textarea {
     padding: 12px;
     gap: 12px;
   }
-  .hero-topline .eyebrow {
-    font-size: 9px;
-    letter-spacing: 1px;
-  }
-  .hero-coordinate {
-    font-size: 8px;
-  }
   .hero h1 {
     font-size: clamp(60px, 8.6vw, 76px);
     letter-spacing: -4.5px;
@@ -1018,36 +792,12 @@ textarea {
   .hero-meta {
     row-gap: 12px;
   }
-  .hero-meta-people {
-    border-left: 0;
-    padding-left: 0;
-  }
   .hero-cta {
     font-size: 9px;
     gap: 9px;
   }
   .hero-image {
     height: 310px;
-  }
-  .photo-stamp {
-    width: 100px;
-    height: 100px;
-    gap: 10px;
-    right: 18px;
-    top: 18px;
-  }
-  .photo-stamp span {
-    font-size: 6px;
-  }
-  .photo-stamp svg {
-    width: 27px;
-    height: 27px;
-  }
-  .image-caption {
-    font-size: 7px;
-    left: 18px;
-    right: 18px;
-    bottom: 18px;
   }
   .section {
     padding-block: 70px;
@@ -1063,16 +813,7 @@ textarea {
   .inquiry-grid {
     column-gap: 35px;
   }
-  .sprint-pillars {
-    gap: 30px;
-  }
-  .sprint-pillars h3 {
-    font-size: 18px;
-  }
-  .sprint-pillars p {
-    font-size: 12px;
-  }
-  .about-copy > p:not(.large-copy) {
+  .about-copy > p {
     font-size: 13px;
   }
   .tier-grid {
@@ -1092,11 +833,7 @@ textarea {
   .tier-price {
     font-size: 39px;
   }
-  .tier-caption {
-    min-height: 20px;
-  }
   .tier-top {
-    min-height: 25px;
   }
   .tier ul {
     min-height: 145px;
@@ -1116,9 +853,6 @@ textarea {
   .organizers > div {
     grid-column: 1/-1;
   }
-  .organizers .eyebrow {
-    margin-bottom: 15px;
-  }
   .site-footer {
     grid-template-columns: 1fr 1fr;
   }
@@ -1127,7 +861,7 @@ textarea {
     text-align: left;
   }
   .footer-links {
-    justify-self: end;
+    grid-column: 1 / -1;
   }
   .participant-grid {
     grid-template-columns: 1fr 1fr;
@@ -1160,18 +894,8 @@ textarea {
     gap: 10px;
     padding: 11px;
   }
-  .button-small svg {
-    width: 14px;
-    height: 14px;
-  }
   .hero {
     padding-top: 27px;
-  }
-  .hero-coordinate {
-    display: none;
-  }
-  .hero-topline .eyebrow {
-    font-size: 8px;
   }
   .hero-content {
     padding-top: 30px;
@@ -1204,42 +928,6 @@ textarea {
   .hero-image > img {
     object-position: 61% center;
   }
-  .photo-stamp {
-    width: 88px;
-    height: 88px;
-    right: 13px;
-    top: 13px;
-    gap: 8px;
-  }
-  .photo-stamp span {
-    font-size: 5px;
-  }
-  .photo-stamp svg {
-    width: 25px;
-    height: 25px;
-  }
-  .image-caption {
-    font-size: 7px;
-    letter-spacing: 0.6px;
-    left: 14px;
-    bottom: 17px;
-  }
-  .image-caption > span:last-child {
-    display: none;
-  }
-  .ticker {
-    margin-top: 23px;
-  }
-  .ticker > div {
-    padding-block: 17px;
-    font-size: 11px;
-    min-width: 730px;
-    gap: 20px;
-    justify-content: start;
-  }
-  .ticker-star {
-    font-size: 21px;
-  }
   .section {
     padding-block: 56px;
   }
@@ -1263,47 +951,14 @@ textarea {
   .about-copy {
     max-width: none;
   }
-  .large-copy {
-    font-size: 23px;
-  }
-  .sprint-pillars {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    padding-top: 27px;
-  }
-  .sprint-pillars > div {
-    position: relative;
-    padding-left: 49px;
-  }
-  .sprint-pillars svg {
-    position: absolute;
-    left: 0;
-    top: 2px;
-    width: 25px;
-    height: 25px;
-  }
-  .sprint-pillars h3 {
-    font-size: 19px;
-    margin-bottom: 10px;
-  }
-  .sprint-pillars p {
+  .place-heading > p {
     max-width: none;
-    font-size: 13px;
-  }
-  .place-heading > p:not(.eyebrow) {
-    max-width: none;
-  }
-  .location-label {
-    margin-top: 27px;
   }
   .place-details article {
     padding-block: 23px;
   }
   .place-details h3 {
     font-size: 20px;
-  }
-  .practical-grid .button {
-    margin-top: 25px;
   }
   summary {
     font-size: 16px;
@@ -1321,23 +976,15 @@ textarea {
     padding: 20px 14px;
   }
   .tier-top {
-    min-height: 47px;
     align-content: start;
   }
   .tier-top h3 {
     font-size: 17px;
   }
-  .tier-top > span {
-    font-size: 5.5px;
-  }
   .tier-price {
     font-size: 31px;
     letter-spacing: -1.5px;
     margin-top: 10px;
-  }
-  .tier-caption {
-    font-size: 10px;
-    min-height: 35px;
   }
   .tier li {
     font-size: 10px;
@@ -1350,10 +997,6 @@ textarea {
   .tier-link {
     font-size: 10px;
   }
-  .tier-link svg {
-    width: 15px;
-    height: 15px;
-  }
   .inquiry-grid {
     padding-top: 50px;
     gap: 30px;
@@ -1361,7 +1004,7 @@ textarea {
   .inquiry-grid h3 {
     font-size: 35px;
   }
-  .inquiry-grid > div > p:not(.eyebrow) {
+  .inquiry-grid > div > p {
     max-width: none;
   }
   .inquiry-grid .form-note {
@@ -1414,9 +1057,6 @@ textarea {
   .site-footer {
     padding-block: 30px;
     gap: 28px 10px;
-  }
-  .site-footer .wordmark {
-    font-size: 22px;
   }
   .site-footer > div > p {
     max-width: 170px;

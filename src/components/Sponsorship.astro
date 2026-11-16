@@ -1,17 +1,14 @@
 ---
-import Icon from "./Icon.astro";
 const levels = [
   {
     name: "Individual",
     price: "500",
-    caption: "Individual support.",
     perks: ["Your link on the website"],
     value: "Individual (USD 500)",
   },
   {
     name: "Company",
     price: "1,500",
-    caption: "Company sponsorship.",
     perks: [
       "Logo on the website & T shirt",
       "Company name on your name tag",
@@ -22,7 +19,6 @@ const levels = [
   {
     name: "Gold",
     price: "4,000",
-    caption: "Additional visibility and seats.",
     perks: [
       "Everything in Company",
       "Large logo & 2 reserved seats",
@@ -34,7 +30,6 @@ const levels = [
   {
     name: "Diamond",
     price: "8,000",
-    caption: "Our largest sponsorship tier.",
     perks: [
       "Everything in Gold",
       "Prominent logo & keynote",
@@ -50,12 +45,7 @@ const levels = [
   <div class="container">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">04 / Sponsorship</p>
-        <h2>
-          Support
-          <br />
-          TacoSprint 2027.
-        </h2>
+        <h2>Sponsorship.</h2>
       </div>
       <p>
         Sponsorship pays for accommodation, breakfast, lunch, T shirts, and some
@@ -72,13 +62,9 @@ const levels = [
             ${level.price}
             <small> USD</small>
           </p>
-          <p class="tier-caption">{level.caption}</p>
           <ul>
             {level.perks.map((perk) => (
-              <li>
-                <span aria-hidden="true">↗</span>
-                {perk}
-              </li>
+              <li>{perk}</li>
             ))}
           </ul>
           <a
@@ -86,21 +72,20 @@ const levels = [
             href="#sponsorship-inquiry"
             data-level={level.value}
           >
-            Choose {level.name.toLowerCase()} <Icon name="arrow" />
+            Choose {level.name.toLowerCase()}
           </a>
         </article>
       ))}
     </div>
     <div class="inquiry-grid" id="sponsorship-inquiry">
       <div>
-        <p class="eyebrow">Contact the organizers</p>
         <h3>Sponsorship inquiries.</h3>
         <p>
           Choose a tier or contact us to discuss other ways to support the
           sprint.
         </p>
         <a class="text-link" href="mailto:sponsors@tacosprint.org">
-          sponsors@tacosprint.org <Icon name="arrow" />
+          sponsors@tacosprint.org
         </a>
         <p class="form-note" id="sponsorship-help">
           This form prepares a draft in your email app. Review and send it there
@@ -173,16 +158,16 @@ const levels = [
           required
         ></textarea>
         <button class="button" type="submit">
-          Prepare sponsorship email <Icon name="arrow" />
+          Prepare sponsorship email
         </button>
         <p id="sponsorship-status" class="form-note" role="status"></p>
       </form>
       <noscript>
         <p>
-          Please email{" "}
+          Please email
           <a href="mailto:sponsors@tacosprint.org?subject=TacoSprint%202027%20sponsorship">
             sponsors@tacosprint.org
-          </a>{" "}
+          </a>
           to discuss sponsorship.
         </p>
       </noscript>

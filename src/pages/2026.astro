@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Icon from "../components/Icon.astro";
 import SprintPhoto from "../components/SprintPhoto.astro";
 const participants = [
   ["Victor Borja", "vic"],
@@ -31,7 +30,7 @@ const participants = [
       Saladita, Guerrero, Mexico, from June 20 to 26, 2026.
     </p>
     <a class="text-link" href="/">
-      Explore the 2027 edition <Icon name="arrow" />
+      Explore the 2027 edition
     </a>
   </section>
   <section
@@ -42,7 +41,6 @@ const participants = [
     <SprintPhoto />
   </section>
   <section class="section container">
-    <p class="eyebrow">2026 edition</p>
     <h2>Participants.</h2>
     <div class="participant-grid">
       {participants.map(([name, handle]) => (
@@ -56,7 +54,7 @@ const participants = [
           />
           <div>
             <strong>{name}</strong>
-            <span>@{handle} ↗</span>
+            <span>@{handle}</span>
           </div>
         </a>
       ))}
@@ -64,7 +62,6 @@ const participants = [
   </section>
   <section class="archive-sponsors section">
     <div class="container">
-      <p class="eyebrow">2026 edition</p>
       <h2>Sponsors.</h2>
       <p>Thank you to the sponsors of TacoSprint 2026.</p>
       <h3>Gold sponsor</h3>
@@ -101,7 +98,7 @@ const participants = [
         </a>
       </div>
       <a class="button archive-back" href="/#sponsors">
-        Support the 2027 sprint <Icon name="arrow" />
+        Support the 2027 sprint
       </a>
     </div>
   </section>

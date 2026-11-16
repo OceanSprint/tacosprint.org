@@ -2,7 +2,6 @@
 import "@fontsource-variable/dm-sans";
 import "@fontsource-variable/space-grotesk";
 import "../styles/global.css";
-import Icon from "../components/Icon.astro";
 interface Props {
   title?: string;
   description?: string;
@@ -54,35 +53,22 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         <a href="/#about">The sprint</a>
         <a href="/#location">Location</a>
         <a href="/2026/" aria-current={archive ? "page" : undefined}>
-          2026 edition <span aria-hidden="true">↗</span>
+          2026 edition
         </a>
       </nav>
       <a class="button button-small" href="/#sponsors">
-        Become a sponsor <Icon name="arrow" />
+        Become a sponsor
       </a>
     </header>
     <main id="main">
       <slot />
     </main>
     <footer class="site-footer container">
-      <div>
-        <a class="wordmark" href="/" aria-label="TacoSprint home">
-          <img
-            class="brand-symbol"
-            src="/assets/tacosprint.svg"
-            alt=""
-            width="48"
-            height="40"
-          />{" "}
-          taco<span>sprint</span>
-        </a>
-        <p>A week of Nix hacking in Mexico.</p>
-      </div>
       <div class="footer-links">
-        <a href="/2026/">2026 edition ↗</a>
-        <a href="mailto:sponsors@tacosprint.org">Get in touch ↗</a>
+        <a href="/2026/">2026 edition</a>
+        <a href="mailto:sponsors@tacosprint.org">Get in touch</a>
         <a href="https://github.com/OceanSprint/tacosprint.org">
-          Source on GitHub ↗
+          Source on GitHub
         </a>
       </div>
       <p class="copyright">
