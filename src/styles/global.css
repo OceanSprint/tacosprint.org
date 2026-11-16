@@ -275,6 +275,22 @@ h3 {
   padding-block: 10px;
   min-height: 44px;
 }
+.report-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  padding-block: 32px;
+  border-top: 1px solid var(--line);
+}
+.report-row h2 {
+  font-size: 24px;
+}
+.report-row p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
 .place-section {
   background: var(--surface-green);
 }
