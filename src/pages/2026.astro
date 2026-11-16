@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Icon from "../components/Icon.astro";
+import SprintPhoto from "../components/SprintPhoto.astro";
 const participants = [
   ["Victor Borja", "vic"],
   ["Alex Decious", "adeci"],
@@ -32,6 +33,13 @@ const participants = [
     <a class="text-link" href="/">
       Explore the 2027 edition <Icon name="arrow" />
     </a>
+  </section>
+  <section
+    class="container archive-photos"
+    id="photos"
+    aria-label="Photos from TacoSprint 2026"
+  >
+    <SprintPhoto />
   </section>
   <section class="section container">
     <p class="eyebrow">2026 edition</p>
@@ -98,3 +106,9 @@ const participants = [
     </div>
   </section>
 </Layout>
+
+<style>
+  .archive-photos {
+    padding-top: 48px;
+  }
+</style>
