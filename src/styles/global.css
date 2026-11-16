@@ -291,6 +291,10 @@ h3 {
 .place-details {
   grid-area: details;
 }
+.place-heading > h2,
+.practical-heading > h2 {
+  margin-bottom: 28px;
+}
 .section-photo {
   display: block;
   width: 100%;
@@ -303,9 +307,11 @@ h3 {
 }
 .place-heading > p {
   font-size: var(--text-body);
-  max-width: 340px;
   color: var(--muted);
-  margin-top: 24px;
+  margin: 0 0 16px;
+}
+.practical-heading > .section-photo {
+  margin-bottom: 0;
 }
 .place-details article {
   display: flex;
@@ -953,9 +959,6 @@ textarea {
   }
   .section-photo {
     margin-bottom: 24px;
-  }
-  .place-heading > p {
-    max-width: none;
   }
   .place-details article {
     padding-block: 23px;
