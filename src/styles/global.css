@@ -210,10 +210,6 @@ h3 {
   margin-left: 12px;
 }
 .hero-content {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  align-items: end;
-  gap: 40px;
   padding: 36px 0 35px;
 }
 .hero h1 {
@@ -225,43 +221,15 @@ h3 {
 .accent {
   color: var(--accent);
 }
-.hero-aside {
-  max-width: 290px;
-  justify-self: end;
-  padding-bottom: 9px;
-}
-.sun-mark {
-  font-size: 90px;
-  color: var(--accent);
-  line-height: 1;
-  margin-bottom: 21px;
-  font-family: serif;
-}
-.hero-aside > p:first-of-type {
-  font-family: var(--heading);
-  font-size: 22px;
-  line-height: 1.35;
-  letter-spacing: -0.7px;
-  margin-bottom: 13px;
+.hero-title-break {
+  display: none;
 }
 .hero-description {
-  font-size: 13px;
+  max-width: 640px;
+  font-size: 16px;
   color: var(--muted);
-  line-height: 1.8;
-  margin-bottom: 26px;
-}
-.hero-discover {
-  font-size: 11px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 10px;
-  max-width: 230px;
-}
-.hero-discover span {
-  font-size: 21px;
+  line-height: 1.7;
+  margin: 24px 0 0;
 }
 .hero-bottom {
   border-top: 1px solid var(--line);
@@ -955,22 +923,6 @@ textarea {
   .hero h1 {
     letter-spacing: -4px;
   }
-  .hero-content {
-    grid-template-columns: 1.55fr 1fr;
-    gap: 30px;
-  }
-  .hero-aside {
-    max-width: 245px;
-  }
-  .hero-aside > p:first-of-type {
-    font-size: 20px;
-  }
-  .sun-mark {
-    font-size: 70px;
-  }
-  .hero-description {
-    font-size: 12px;
-  }
   .hero-meta {
     gap: 13px;
     font-size: 8px;
@@ -1053,26 +1005,22 @@ textarea {
     font-size: clamp(60px, 8.6vw, 76px);
     letter-spacing: -4.5px;
   }
-  .hero-content {
-    gap: 25px;
-    grid-template-columns: 1.55fr 1fr;
-  }
-  .hero-aside > p:first-of-type {
-    font-size: 19px;
+  .hero-title-break {
+    display: initial;
   }
   .hero-description {
-    font-size: 11px;
-    margin-bottom: 18px;
+    font-size: 15px;
   }
-  .sun-mark {
-    font-size: 55px;
-    margin-bottom: 16px;
+  .hero-bottom,
+  .hero-meta {
+    flex-wrap: wrap;
   }
-  .hero-discover {
-    font-size: 10px;
+  .hero-meta {
+    row-gap: 12px;
   }
   .hero-meta-people {
-    display: none !important;
+    border-left: 0;
+    padding-left: 0;
   }
   .hero-cta {
     font-size: 9px;
@@ -1226,43 +1174,17 @@ textarea {
     font-size: 8px;
   }
   .hero-content {
-    grid-template-columns: 1fr;
     padding-top: 30px;
     padding-bottom: 27px;
-    gap: 26px;
   }
   .hero h1 {
     font-size: clamp(59px, 13vw, 79px);
     letter-spacing: -3.8px;
     line-height: 1.04;
   }
-  .hero-aside {
-    justify-self: start;
-    max-width: 100%;
-    position: relative;
-    padding: 0 62px 0 0;
-  }
-  .hero-aside > p:first-of-type {
-    font-size: 19px;
-    margin-bottom: 10px;
-  }
-  .hero-aside > p:first-of-type br {
-    display: none;
-  }
   .hero-description {
-    font-size: 12px;
-    max-width: 340px;
-    margin-bottom: 16px;
-  }
-  .sun-mark {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 53px;
-  }
-  .hero-discover {
-    font-size: 10px;
-    max-width: 205px;
+    font-size: 14px;
+    margin-top: 20px;
   }
   .hero-bottom {
     flex-wrap: wrap;
