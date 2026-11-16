@@ -282,7 +282,7 @@ h3 {
   flex-wrap: wrap;
   gap: 16px 40px;
   padding-block: 32px;
-  border-top: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
 }
 .report-row h2 {
   font-size: 24px;
