@@ -43,15 +43,6 @@ const levels = [
 
 <section class="sponsorship section" id="sponsors">
   <div class="container">
-    <div class="section-heading">
-      <div>
-        <h2>Sponsorship.</h2>
-      </div>
-      <p>
-        Sponsorship pays for accommodation, breakfast, lunch, T shirts, and some
-        activities, giving attendees more time to work on Nix.
-      </p>
-    </div>
     <div class="tier-grid">
       {levels.map((level) => (
         <article class:list={["tier", { featured: level.name === "Gold" }]}>
@@ -79,7 +70,11 @@ const levels = [
     </div>
     <div class="inquiry-grid" id="sponsorship-inquiry">
       <div>
-        <h3>Sponsorship inquiries.</h3>
+        <h2>Sponsorship inquiries.</h2>
+        <p>
+          Sponsorship pays for accommodation, breakfast, lunch, T shirts, and
+          some activities, giving attendees more time to work on Nix.
+        </p>
         <p>
           Choose a tier or contact us to discuss other ways to support the
           sprint.

@@ -511,7 +511,7 @@ details p {
   padding-top: 75px;
   scroll-margin-top: 35px;
 }
-.inquiry-grid h3 {
+.inquiry-grid h2 {
   font-size: 32px;
   letter-spacing: -1px;
   margin-bottom: 20px;
@@ -1030,7 +1030,7 @@ textarea {
     padding-top: 50px;
     gap: 30px;
   }
-  .inquiry-grid h3 {
+  .inquiry-grid h2 {
     font-size: 32px;
   }
   .inquiry-grid > div > p {
