@@ -193,11 +193,21 @@ h3 {
   display: none;
 }
 .hero-description {
-  max-width: 640px;
-  font-size: 16px;
+  max-width: 820px;
+  font-family: var(--heading);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+  color: var(--ink);
+  line-height: 1.45;
+  margin: 30px 0 0;
+  text-wrap: pretty;
+}
+.hero-welcome {
+  margin: 14px 0 0;
   color: var(--muted);
-  line-height: 1.7;
-  margin: 24px 0 0;
+  font-size: 13px;
+  line-height: 1.6;
 }
 .hero-photos {
   --hero-photo-height: 400px;
@@ -747,7 +757,7 @@ textarea {
     display: initial;
   }
   .hero-description {
-    font-size: 15px;
+    font-size: 24px;
   }
   .hero-image {
     height: 310px;
@@ -860,8 +870,13 @@ textarea {
     line-height: 1.04;
   }
   .hero-description {
-    font-size: 14px;
-    margin-top: 20px;
+    font-size: 21px;
+    letter-spacing: -0.4px;
+    margin-top: 24px;
+  }
+  .hero-welcome {
+    font-size: 12px;
+    margin-top: 12px;
   }
   .hero-image {
     height: 285px;
