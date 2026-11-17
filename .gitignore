@@ -1,0 +1,14 @@
+.devenv*
+.cache
+site/
+.claude/
+
+node_modules/
+dist/
+.astro/
+
+# Private event coordination belongs in OceanSprint/tacospring-org.
+/emails/
+.env
+.env.*
+!.env.example

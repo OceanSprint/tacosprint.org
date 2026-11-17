@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SprintPhoto from "../components/SprintPhoto.astro";
+const participants = [
+  ["Victor Borja", "vic"],
+  ["Alex Decious", "adeci"],
+  ["Alan Urmancheev", "alurm"],
+  ["Jon Ringer", "jonringer"],
+  ["Jared Siegel", "dayofdoom"],
+  ["Marijan Petričević", "marijanp"],
+  ["Geoffrey Huntley", "ghuntley"],
+  ["Domen Kožar", "domenkozar"],
+  ["Farid Zakaria", "fzakaria"],
+];
+---
+
+<Layout
+  title="The 2026 edition · TacoSprint"
+  description="The Nix TacoSprint 2026 archive. June 20 to 26 in La Saladita, Mexico. Sprint report, participants, and sponsors of the 2026 edition."
+>
+  <section class="archive-hero container">
+    <p class="eyebrow">The archive / June 20 to 26, 2026</p>
+    <h1>
+      Nix TacoSprint
+      <br />
+      <span class="accent">2026.</span>
+    </h1>
+    <p>
+      A week of Nix hacking, collaboration, and knowledge sharing in La
+      Saladita, Guerrero, Mexico, from June 20 to 26, 2026.
+    </p>
+    <a class="text-link" href="/">
+      Explore the 2027 edition
+    </a>
+  </section>
+  <section class="section container about-grid" id="report">
+    <div>
+      <h2>The 2026 report.</h2>
+    </div>
+    <div class="about-copy">
+      <p>
+        Nine contributors spent the week working on dynamic linking, relocatable
+        packages, remote builds, module systems, and Nix tooling. Read their
+        shared report, “Attention, Nix and Tacos Is All You Need.”
+      </p>
+      <a
+        class="text-link"
+        href="https://fzakaria.com/assets/pdfs/Attention_Nix_and_Tacos_is_All_You_Need.pdf"
+      >
+        Read the report (PDF)
+      </a>
+    </div>
+  </section>
+  <section
+    class="container archive-photos"
+    id="photos"
+    aria-label="Photos from TacoSprint 2026"
+  >
+    <SprintPhoto />
+  </section>
+  <section class="section container">
+    <h2>Participants.</h2>
+    <div class="participant-grid">
+      {participants.map(([name, handle]) => (
+        <a class="participant" href={`https://github.com/${handle}`}>
+          <img
+            src={`https://github.com/${handle}.png?size=160`}
+            alt=""
+            width="80"
+            height="80"
+            loading="lazy"
+          />
+          <div>
+            <strong>{name}</strong>
+            <span>@{handle}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+  <section class="archive-sponsors section">
+    <div class="container">
+      <h2>Sponsors.</h2>
+      <p>Thank you to the sponsors of TacoSprint 2026.</p>
+      <h3>Gold sponsor</h3>
+      <div class="sponsor-logos">
+        <a href="https://opensource.fb.com/">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
+            alt="Meta"
+            width="180"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <h3>Company sponsors</h3>
+      <div class="sponsor-logos">
+        <a href="https://cachix.org/">
+          <img
+            src="/assets/logos/cachix.png"
+            alt="Cachix"
+            width="160"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+        <a href="https://numtide.com/">
+          <img
+            src="/assets/logos/numtide.svg"
+            alt="Numtide"
+            width="160"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <a class="button archive-back" href="/#sponsors">
+        Support the 2027 sprint
+      </a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .archive-photos {
+    padding-top: 48px;
+  }
+</style>
