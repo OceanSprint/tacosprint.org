@@ -307,8 +307,15 @@ h3 {
 }
 .report-row {
   padding-block: 48px;
-  background: var(--surface-green);
-  border-top: 3px solid var(--accent);
+  background: var(--accent);
+  color: var(--paper);
+}
+.report-row a:hover {
+  color: var(--paper);
+  text-decoration-thickness: 3px;
+}
+.report-row a:focus-visible {
+  outline-color: var(--paper);
 }
 .report-row .place-heading > h2 {
   margin-bottom: 0;
@@ -320,7 +327,7 @@ h3 {
 }
 .report-row p {
   margin: 0 0 8px;
-  color: var(--muted);
+  color: var(--paper);
 }
 .participant-reports-heading {
   margin-top: 0;
