@@ -676,6 +676,14 @@ textarea {
   gap: 12px 24px;
   font-size: var(--text-small);
 }
+.footer-links .source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.source-link svg {
+  flex-shrink: 0;
+}
 .site-footer .copyright {
   text-align: right;
   line-height: 1.9;
