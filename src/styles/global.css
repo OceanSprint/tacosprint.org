@@ -282,7 +282,8 @@ h3 {
   object-fit: cover;
   object-position: 90% center;
 }
-.about-grid {
+.about-grid,
+.report-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 100px;
@@ -310,6 +311,12 @@ h3 {
   background: var(--accent);
   color: var(--paper);
 }
+.report-grid {
+  align-items: center;
+}
+.report-grid > .section-photo {
+  margin-bottom: 0;
+}
 .report-row a:hover {
   color: var(--paper);
   text-decoration-thickness: 3px;
@@ -317,10 +324,10 @@ h3 {
 .report-row a:focus-visible {
   outline-color: var(--paper);
 }
-.report-row .place-heading > h2 {
-  margin-bottom: 0;
+.report-copy > h2 {
+  margin-bottom: 28px;
 }
-.report-row .place-heading a {
+.report-copy > h2 a {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 8px;
@@ -815,6 +822,7 @@ textarea {
     height: 350px;
   }
   .about-grid,
+  .report-grid,
   .place-grid,
   .practical-grid,
   .section-heading,
@@ -899,6 +907,7 @@ textarea {
     letter-spacing: -1.5px;
   }
   .about-grid,
+  .report-grid,
   .place-grid,
   .practical-grid,
   .section-heading,
@@ -1020,6 +1029,7 @@ textarea {
     letter-spacing: -1.5px;
   }
   .about-grid,
+  .report-grid,
   .place-grid,
   .practical-grid,
   .section-heading,
