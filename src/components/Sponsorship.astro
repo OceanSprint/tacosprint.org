@@ -44,6 +44,21 @@ const levels = [
 
 <section class="sponsorship section" id="sponsors">
   <div class="container">
+    <a class="diamond-sponsor" href="https://nativelink.com/">
+      <span class="diamond-sponsor-tier">Diamond sponsor</span>
+      <span class="diamond-sponsor-brand">
+        <img
+          src="/assets/logos/nativelink.svg"
+          alt="NativeLink"
+          width="320"
+          height="52"
+          loading="lazy"
+        />
+        <span class="diamond-sponsor-arrow" aria-hidden="true">
+          ↗
+        </span>
+      </span>
+    </a>
     <div class="tier-grid">
       {levels.map((level) => (
         <article class:list={["tier", { selected: level.name === "Gold" }]}>
@@ -173,6 +188,79 @@ const levels = [
     </div>
   </div>
 </section>
+
+<style>
+  .diamond-sponsor {
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 2fr;
+    margin-bottom: clamp(32px, 4.5vw, 60px);
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+  .diamond-sponsor:hover {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .diamond-sponsor-tier {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 22px clamp(20px, 3.5vw, 46px);
+    border-inline-end: 1px solid var(--line);
+    background: var(--surface-green);
+    font: 600 clamp(20px, 2.1vw, 28px) / 1.2 var(--heading);
+    letter-spacing: -0.5px;
+  }
+
+  .diamond-sponsor-tier::before {
+    content: "";
+    flex: none;
+    width: 13px;
+    height: 13px;
+    border: 2px solid var(--flag-green);
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+
+  .diamond-sponsor-brand {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: clamp(28px, 4vw, 52px) clamp(46px, 6vw, 80px);
+  }
+
+  .diamond-sponsor-brand img {
+    height: auto;
+  }
+
+  .diamond-sponsor-arrow {
+    position: absolute;
+    inset-inline-end: clamp(16px, 2.8vw, 36px);
+    color: var(--flag-green);
+    font-size: 22px;
+  }
+
+  .diamond-sponsor:hover .diamond-sponsor-arrow {
+    color: var(--accent);
+  }
+
+  @media (max-width: 640px) {
+    .diamond-sponsor {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .diamond-sponsor-tier {
+      padding-block: 16px;
+      border-inline-end: 0;
+      border-bottom: 1px solid var(--line);
+    }
+  }
+</style>
+
 <script>
   const form = document.querySelector<HTMLFormElement>("#sponsorship-form");
   if (form) {
